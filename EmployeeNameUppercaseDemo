@@ -1,0 +1,15 @@
+
+import java.util.*;
+
+public class EmployeeNameUppercaseDemo {
+    public static void main(String[] args) {
+        List<String> employees = Arrays.asList("Amit", "Neha", "Rohan", "Priya", "Karan");
+
+        System.out.println("Employee Names in Uppercase:");
+
+        
+        employees.stream()
+                 .map(String::toUpperCase)   
+                 .forEach(System.out::println);
+    }
+}
